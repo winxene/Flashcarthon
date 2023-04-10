@@ -10,8 +10,8 @@ struct FlashCard: View {
     let height : CGFloat = 250
     let durationAndDelay : CGFloat = 0.3
     
-    let question: String
-    let answer: String
+    let question: String?
+    let answer: String?
     
     
     func flipCard () {

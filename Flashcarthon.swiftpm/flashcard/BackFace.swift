@@ -4,7 +4,7 @@ struct BackFace : View {
     let width : CGFloat
     let height : CGFloat
     //    let image: Image
-    let question: String
+    let question: String?
     @Binding var degree : Double
     
     var body: some View {
@@ -15,7 +15,7 @@ struct BackFace : View {
             //            Image()
             VStack{
                 Text("Question:").font(.headline).padding(.bottom, 8)
-                Text(question)
+                Text(question!)
                     .multilineTextAlignment(.center)
                     .frame(width: 200)
                     
