@@ -14,7 +14,7 @@ struct BackFace : View {
                 .frame(width: width, height: height)
             //            Image()
             VStack{
-                Text("Question")
+                Text("Question:").font(.headline).padding(.bottom, 8)
                 Text(question)
             }
         }.rotation3DEffect(Angle(degrees: degree), axis: (x: 0, y: 1, z: 0))
