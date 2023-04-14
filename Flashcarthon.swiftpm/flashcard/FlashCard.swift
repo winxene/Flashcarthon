@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct FlashCard: View {
-    //MARK: Variables
     @State var flipBackDegree = 0.0
     @State var flipFrontDegree = -90.0
     @State var isCardFlipped = false
