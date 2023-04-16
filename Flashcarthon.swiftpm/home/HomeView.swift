@@ -4,8 +4,12 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
+                Spacer()
                 Text("Flashcarthon")
-                    .font(.system(size: 48, weight: .bold)) 
+                    .font(.system(size: 60, weight: .bold))
+                    .padding(.bottom, -10)
+                Text("Indonesia's Provinces and Capital Cities").font(.system(size: 18, weight: .regular))
+                Spacer()
                 NavigationLink(destination: FlashCardView()) {
                     Text("Flashcards")
                         .font(.title)
@@ -22,6 +26,8 @@ struct HomeView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
+                Spacer()
+                Text("Created by Winxen")
                 Spacer()
             }
             .padding()
