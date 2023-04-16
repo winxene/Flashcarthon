@@ -9,14 +9,14 @@ struct FrontFace: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .fill(.white)
+                .fill(.brown)
                 .frame(width: width, height: height)
                 .shadow(color: .gray, radius: 2, x: 0, y: 0)
             VStack {
-                Text("Answer:").font(.headline).padding(.bottom, 8)
+                Text("Answer:").font(.headline).padding(.bottom, 8).colorInvert()
                 Text(answer!)
                     .multilineTextAlignment(.center)
-                    .frame(width: 200)
+                    .frame(width: 200).colorInvert()
             }
         }.rotation3DEffect(Angle(degrees: degree), axis: (x: 0, y: 1, z: 0))
     }
