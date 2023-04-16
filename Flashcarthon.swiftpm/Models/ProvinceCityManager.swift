@@ -1,4 +1,5 @@
 import SwiftUI
+//The map asset is taken from this repository
 
 class ProvinceCityManager {
     let provincesAndCapitals = [
@@ -26,6 +27,10 @@ class ProvinceCityManager {
         "Nusa Tenggara Timur": "Kupang",
         "Papua": "Jayapura",
         "Papua Barat": "Manokwari",
+        "Papua Barat Daya": "Sorong",
+        "Papua Pegunungan": "Jayawijaya",
+        "Papua Selatan": "Merauke",
+        "Papua Tengah": "Nabire",
         "Riau": "Pekanbaru",
         "Sulawesi Barat": "Mamuju",
         "Sulawesi Selatan": "Makassar",
