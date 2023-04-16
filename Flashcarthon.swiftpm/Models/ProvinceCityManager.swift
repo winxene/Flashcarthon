@@ -1,6 +1,6 @@
 import SwiftUI
 //The map asset is taken from this repository
-
+//Link TBA
 class ProvinceCityManager {
     let provincesAndCapitals = [
         "Aceh": "Banda Aceh",
