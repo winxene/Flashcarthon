@@ -16,6 +16,7 @@ struct FlashCardView: View {
                         .padding()
                 }
             }.tabViewStyle(PageTabViewStyle())
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
         }
     }
 }
