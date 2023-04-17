@@ -6,7 +6,7 @@ struct HomeView: View {
             VStack(spacing: 20) {
                 Spacer()
                 Text("Flashcarthon")
-                    .font(.system(size: 60, weight: .bold))
+                    .font(.system(size: 54, weight: .bold))
                     .padding(.bottom, -10)
                 Text("Indonesia's Provinces and Capital Cities").font(.system(size: 18, weight: .regular))
                 Spacer()
@@ -31,6 +31,6 @@ struct HomeView: View {
                 Spacer()
             }
             .padding()
-        }
+        }.navigationViewStyle(.stack)
     }
 }
