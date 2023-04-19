@@ -11,16 +11,15 @@ struct ButtonRow: View {
             HStack(spacing: 10) {
                 ForEach(buttons, id: \.title) { button in
                     Button(action: { selectedRegion = button.title }) {
-                        Text(button.title)
-                            .font(.title)
-                            .frame(width: buttonWidth, height: buttonHeight)
-                            .foregroundColor(.white)
-                            .background(button.color)
-                            .cornerRadius(10)
-                    }
+                        VStack{
+                            Image("\(button.image)").resizable().frame(width: 32, height: 32)
+                            Text(button.title)
+                                .font(.system(size: 12))             .foregroundColor(.white)
+                                .multilineTextAlignment(.center)
+                        }
+                    }.frame(width: 80).cornerRadius(20).background(.brown)
                 }
             }
-            .padding(.horizontal, 10)
         }
         .frame(maxWidth: .infinity, maxHeight: buttonHeight)
     }
