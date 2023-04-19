@@ -11,7 +11,7 @@ struct FlashCard: View {
     
     let question: String?
     let answer: String?
-    
+//    let provinceImage: Image?
     
     func flipCard () {
         isCardFlipped = !isCardFlipped
