@@ -4,9 +4,9 @@ class ProvinceCity {
     var provinceName: String
     var capitalCityName: String
     var islandCategory: String
-    var image: Image
+    var image: String
     
-    init(provinceName: String, capitalCityName: String, islandCategory: String, image: Image) {
+    init(provinceName: String, capitalCityName: String, islandCategory: String, image: String) {
         self.provinceName = provinceName
         self.capitalCityName = capitalCityName
         self.islandCategory = islandCategory
