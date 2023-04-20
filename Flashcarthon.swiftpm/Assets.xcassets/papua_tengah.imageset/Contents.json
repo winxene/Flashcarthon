@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "papua_tengah.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

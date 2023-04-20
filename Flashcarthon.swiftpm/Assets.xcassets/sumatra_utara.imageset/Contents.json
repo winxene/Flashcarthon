@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "sumatra_utara.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
