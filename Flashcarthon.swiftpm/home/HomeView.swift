@@ -7,6 +7,7 @@ struct HomeView: View {
                 Spacer()
                 Text("Flashcarthon")
                     .font(.system(size: 54, weight: .bold))
+                    .foregroundColor(.brown)
                     .padding(.bottom, -10)
                 Text("Indonesia's Provinces and Capital Cities").font(.system(size: 18, weight: .regular))
                 Spacer()

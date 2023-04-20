@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "nusa_tenggara_timur.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
