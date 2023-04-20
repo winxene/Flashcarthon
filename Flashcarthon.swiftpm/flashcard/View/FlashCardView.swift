@@ -2,7 +2,7 @@ import SwiftUI
 
 struct FlashCardView: View {
     @State var currentCardIndex = 0
-    @State var provinceCityManager = ProvinceCityManager()
+    @StateObject var provinceCityManager = ProvinceCityManager()
     
     var body: some View {
         VStack {
@@ -12,7 +12,7 @@ struct FlashCardView: View {
             TabView(selection: $currentCardIndex){
                 ForEach(0..<10) { _ in
                     let randomProvince = provinceCityManager.getRandomProvince()
-                    FlashCard(question: "What is the capital city of \(randomProvince.province)?", answer: randomProvince.capital)
+                    FlashCard(question: "What is the capital city of \(randomProvince.provinceName)?", answer: randomProvince.capitalCityName, image: randomProvince.image)
                         .padding()
                 }
             }.tabViewStyle(PageTabViewStyle())
