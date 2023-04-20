@@ -5,13 +5,13 @@ struct FlashCard: View {
     @State var flipFrontDegree = -90.0
     @State var isCardFlipped = false
     
-    let width : CGFloat = 200
-    let height : CGFloat = 250
+    let width : CGFloat = 400
+    let height : CGFloat = 450
     let durationAndDelay : CGFloat = 0.3
     
     let question: String?
     let answer: String?
-//    let provinceImage: Image?
+    let image: String
     
     func flipCard () {
         isCardFlipped = !isCardFlipped
@@ -35,7 +35,7 @@ struct FlashCard: View {
     var body: some View {
         ZStack {
             FrontFace(width: width, height: height, answer: answer,degree: $flipFrontDegree)
-            BackFace(width: width, height: height, question: question, degree: $flipBackDegree)
+            BackFace(width: width, height: height, image:image, question: question, degree: $flipBackDegree)
         }.onTapGesture {
             flipCard()
         }
